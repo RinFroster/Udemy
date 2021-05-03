@@ -1,0 +1,14 @@
+.udeCarousel .udeCarousel__content {
+  position: relative;
+}
+
+.udeCarousel .udeCarousel__content img {
+  width: 100%;
+}
+
+.udeCarousel .udeCarousel__content .container .carousel__text {
+  position: absolute;
+  left: 80px;
+  bottom: 20px;
+}
+/*# sourceMappingURL=udeCarousel.css.map */

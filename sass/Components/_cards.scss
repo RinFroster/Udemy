@@ -1,0 +1,88 @@
+section {
+    @include styleText($fs-1, $color-black-light, $fw-normal);
+}
+
+.cards__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    position: relative;
+    .cards{
+        margin-bottom: 20px;
+        height: 290px;
+        background: $color-white-0;
+        position: relative;
+        border: 1px solid $color-white-cream;
+        z-index: 0;
+        transition: all 0.3s;
+        box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+        &:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .card__pic{
+            height: 40%;
+            display: flex;
+            position: relative;
+            .card__overplay{
+                width: 100%;
+                background-color: #003845;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+            img{
+                width: 100%;
+            }
+            &:hover{
+                .card__overplay{
+                    opacity: 0.4;
+                }
+            }
+        }
+        .card__textArea{
+            padding: 15px 10px 0 15px;
+            .card__title{
+                p{
+                    font-weight: $fw-bold-1;
+                    height: 42px;
+                    font-size: $fs-0;
+                    color: $color-black-0;
+                }
+            }
+            .card__info{
+                margin-bottom: 10px;
+            }
+
+            .card__rating{
+                i{
+                    color: $color-yellow;
+                    font-size: 12px;
+                }
+                .rate__point{
+                    color: $color-black-light;
+                    font-weight: $fw-bold-1;
+                    font-size: $fs-0;
+                }
+            }
+
+            .card__price{
+                position: absolute;
+                right: 15px;
+                bottom: 10px;
+                span{
+                    text-decoration-line: line-through;
+
+                }
+                .new__price{
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: $color-black-0;
+                    font-weight: $fw-bold-1;
+                }
+            }
+        }
+    }
+}

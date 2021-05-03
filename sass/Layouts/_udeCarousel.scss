@@ -1,0 +1,261 @@
+section{
+    @include styleText($fs-1, $color-black-light, $fw-normal);
+}
+.udeCarousel {
+    .udeCarousel__content {
+        position: relative;
+        img {
+            width: 100%;
+            height: 500px;
+        }
+        .carousel__text {
+            position: absolute;
+            left: 80px;
+            top: 180px;
+            width: 460px;
+            h2 {
+                font-weight: $fw-bold-1;
+                font-size: $fs-4;
+                line-height: $line-height-0;
+                color: $color-white-0;
+            }
+            p {
+                font-size: 18px;
+                line-height: $line-height-0;
+                color: $color-white-0;
+            }
+            .carousel__form {
+                .input-group{ 
+                    .form-control {
+                        border-radius: 2px;
+                        background-color: rgb(242, 243, 245);
+                        border: none;
+                        line-height: $line-height-0;
+                        border-radius: 0;
+                        height: 50px;
+                    }
+                    .input-group-append{
+                        height: 49px;
+                        .input-group-text {
+                            border: none;
+                            background-color: rgb(242, 243, 245);
+                            color: $color-red-0;
+                            line-height: $line-height-0;
+                            border-radius: 0;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+// responsive
+// max-width 1200px
+@include responsive("extra-large") {
+    .udeCarousel {
+        .udeCarousel__content {
+            position: relative;
+            overflow: hidden;
+            img {
+                width: 115%;
+            }
+            .carousel__text {
+                position: absolute;
+                left: 120px;
+                top: 180px;
+                width: 460px;
+                h2 {
+                    font-weight: $fw-bold-1;
+                    font-size: $fs-4;
+                    line-height: $line-height-0;
+                    color: $color-white-0;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: $line-height-0;
+                    color: $color-white-0;
+                }
+                .carousel__form {
+                    .input-group{ 
+                        .form-control {
+                            border-radius: 2px;
+                            background-color: rgb(242, 243, 245);
+                            border: none;
+                            line-height: $line-height-0;
+                            border-radius: 0;
+                            height: 50px;
+                        }
+                        .input-group-append{
+                            height: 49px;
+                            .input-group-text {
+                                border: none;
+                                background-color: rgb(242, 243, 245);
+                                color: $color-red-0;
+                                line-height: $line-height-0;
+                                border-radius: 0;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+// max-width 992px
+@include responsive("large") {
+    .udeCarousel {
+        .udeCarousel__content {
+            position: relative;
+            overflow: hidden;
+            img {
+                width: 118%;
+            }
+            .carousel__text {
+                position: absolute;
+                left: 120px;
+                top: 180px;
+                width: 320px;
+                h2 {
+                    font-weight: $fw-bold-1;
+                    font-size: $fs-4;
+                    line-height: $line-height-0;
+                    color: $color-white-0;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: $line-height-0;
+                    color: $color-white-0;
+                }
+                .carousel__form {
+                    .input-group{ 
+                        .form-control {
+                            border-radius: 2px;
+                            background-color: $color-white-0;
+                            border: none;
+                            line-height: $line-height-0;
+                            border-radius: 0;
+                            height: 50px;
+                        }
+                        .input-group-append{
+                            height: 49px;
+                            .input-group-text {
+                                border: none;
+                                background-color: $color-white-0;
+                                color: $color-red-0;
+                                line-height: $line-height-0;
+                                border-radius: 0;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+// max-width 768px
+@include responsive("medium") {
+    .udeCarousel {
+        .udeCarousel__content {
+            position: relative;
+            overflow: hidden;
+            img {
+                width: 130%;
+            }
+            .carousel__text {
+                left: 10px;
+                h2 {
+                    font-weight: $fw-bold-1;
+                    font-size: $fs-4;
+                    line-height: $line-height-0;
+                    color: $color-white-0;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: $line-height-0;
+                    color: $color-white-0;
+                }
+                .carousel__form {
+                    .input-group{ 
+                        .form-control {
+                            border-radius: 2px;
+                            background-color: rgb(242, 243, 245);
+                            border: none;
+                            line-height: $line-height-0;
+                            border-radius: 0;
+                            height: 50px;
+                        }
+                        .input-group-append{
+                            height: 49px;
+                            .input-group-text {
+                                border: none;
+                                background-color: rgb(242, 243, 245);
+                                color: $color-red-0;
+                                line-height: $line-height-0;
+                                border-radius: 0;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+// max-width 576px
+@include responsive("small") {
+    .udeCarousel {
+        .udeCarousel__content {
+            position: relative;
+            overflow: hidden;
+            img {
+                width: 120%;
+                height: 300px;
+            }
+            .carousel__text {
+                position: absolute;
+                left: 20px;
+                top: 40px;
+                width: 200px;
+                h2 {
+                    font-weight: $fw-bold-1;
+                    font-size: $fs-2;
+                    line-height: $line-height-0;
+                    color: $color-white-0;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: $line-height-0;
+                    color: $color-white-0;
+                }
+                .carousel__form {
+                    width: 400px;
+                    .input-group{ 
+                        .form-control {
+                            border-radius: 2px;
+                            background-color: rgb(242, 243, 245);
+                            border: none;
+                            line-height: $line-height-0;
+                            border-radius: 0;
+                            height: 50px;
+                        }
+                        .input-group-append{
+                            height: 49px;
+                            .input-group-text {
+                                border: none;
+                                background-color: rgb(242, 243, 245);
+                                color: $color-red-0;
+                                line-height: $line-height-0;
+                                border-radius: 0;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+section{
+    @include styleText($fs-1, $color-black-light, $fw-normal);
+}
+
+.companies{
+    background-color: $color-gray-5;
+    padding-bottom: 24px;
+    .companies__content{
+        p{
+            text-align: center;
+            color: $color-gray-4;
+            font-size: $fs-1;
+            padding-top: 16px;
+        }
+        .companies__logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            margin: 0 auto;
+            padding-top: 20px;
+            .logo__items{
+                img{
+                    margin-left: auto;
+                    margin-right: auto;
+                    display:block;
+                }
+            }
+        }
+        .companies__offers{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 22px;
+            padding-top: 50px;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            height: auto;
+            .nonStudent__offers{
+                padding: 28px 30px;
+                &:first-of-type{
+                    border-right: 1px solid $color-gray-6;
+                }
+                h3{
+                    font-size: $fs-2;
+                    font-weight: $fw-bold-1;
+                    line-height: $line-height-0;
+                    color: $color-black-light;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: $line-height-0;
+                    padding: 3px 60px;
+                }
+                button{
+                    margin-top: 15px;
+                    font-weight: $fw-bold-1;
+                    font-size: 16px;
+                    padding: 11px 12px;
+                    background-color:$color-red-0 ;
+                }
+            }
+        }
+    }
+}
+
+// responsive
+// max-width:1200px
+@include responsive ('extra-large'){
+    .companies{
+        .companies__content{
+            .companies__logo{
+                width: 85%;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+//max-width:992px
+@include responsive ('large'){
+    .companies{
+        .companies__content{
+            .companies__offers{
+                padding-top: 40px;
+                width: 95%;
+                .nonStudent__offers{
+                    &:first-of-type{
+                        border-right: none;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: $line-height-0;
+                        padding: 3px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+//max-width:768px
+@include responsive ('medium'){
+    .companies{
+        .companies__content{
+            .companies__logo{
+                display: inline-flex;
+                width: 70%;
+                flex-wrap: wrap;
+                padding-left: 250px;
+                .logo__items{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+//max-width:576px
+@include responsive ('small'){
+    .companies{
+        .companies__content{
+            .companies__logo{
+                display: inline-flex;
+                width: 90%;
+                flex-wrap: wrap;
+                padding-left: 100px;
+                .logo__items{
+                    margin-bottom: 10px;
+                }
+            }
+            .companies__offers{
+                padding-bottom: 22px;
+                padding-top: 50px;
+                width: 95%;
+                margin: 0 auto;
+                text-align: center;
+                height: auto;
+                .nonStudent__offers{
+                    padding: 28px 0;
+                }
+            }
+        }
+    }
+}

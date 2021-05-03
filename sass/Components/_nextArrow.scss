@@ -1,0 +1,101 @@
+.course__nextArrow, .student__nextArrow, .feedback__nextArrow{
+    @include styleText($fs-1, $color-black-light, $fw-normal);
+}
+
+//courses
+.course__nextArrow{
+    position: absolute;
+    right: -25px;
+    top: 27%;
+    font-size: 40px;
+    color: $color-blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background: $color-white-cream;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+        box-shadow: 0 2px 8px 2px rgba(0,0,0,0.2);
+    }
+}
+
+//student
+.student__nextArrow{
+    position: absolute;
+    right: 50px;
+    top: 27%;
+    font-size: 40px;
+    color: $color-blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background: $color-white-cream;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+        box-shadow: 0 2px 8px 2px rgba(0,0,0,0.2);
+    }
+}
+
+//feedback nextArrow
+.feedback__nextArrow{
+    position: absolute;
+    right: -18px;
+    top: 45%;
+    font-size: 24px;
+    color: $color-blue;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    text-align: center;
+    background: $color-white-cream;
+    line-height: 47px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+        box-shadow: 0 2px 8px 2px rgba(0,0,0,0.2);
+    }
+}
+
+.slick-arrow.slick-disabled { 
+    display: none !important;
+}
+
+// responsive student nextArrow
+// max-width:1200xp
+@include responsive ('extra-large'){
+    .student__nextArrow{
+        right: 10px;
+    }
+}
+// max-width:992px
+@include responsive ('large'){
+    .student__nextArrow{
+        right: 30px;
+    }
+}
+// max-width:768px
+@include responsive ('medium'){
+    .student__nextArrow{
+        right: -10px;
+    }
+}
+// max-width:576px
+@include responsive ('small'){
+    .student__nextArrow{
+        right: -20px;
+    }
+}
+
+// responsive feedback__nextArrow
+// max-width:1200px
+@include responsive ('extra-large'){
+    .feedback__nextArrow{
+        right: -10px;
+    }
+}

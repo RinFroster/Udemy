@@ -1,0 +1,93 @@
+section{
+    @include styleText($fs-1, $color-black-light, $fw-normal);
+}
+
+.intro{
+    background: linear-gradient(-45deg,$color-red-0 0%,$color-purple 100%);
+    .intro__content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0 20px 40px;
+        .fa, .fas{
+            font-size: 47px;
+            color: $color-white-cream;
+        }
+        .intro__container{
+            display: flex;
+            justify-content: center;
+            .intro__icon{
+                padding-right: 10px;
+            }
+            .intro__textArea{
+                padding-left: 15px;
+                .intro__title{
+                    margin-bottom: 5px;
+                    font-size: 18px;
+                    font-weight: $fw-bold-1;
+                    color: $color-white-0;
+                }
+                .intro__text{
+                    font-size: $fs-0;
+                    margin-bottom: 5px;
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+}
+
+// responsive
+// max-width 1200px
+@include responsive("extra-large"){
+    .intro{
+        .intro__content{
+            padding: 20px 10px 10px 0;
+            .fa, .fas{
+                display: none;
+            }
+            .intro__container{
+                .intro__textArea{
+                    text-align: center;
+                    .intro__text{
+                        font-size: $fs-0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// max-width 992px
+@include responsive("large"){
+    .intro{
+        .intro__content{
+            width: 87%;
+            margin: 0 auto;
+            .intro__container{
+                .intro__icon{
+                    display: none;
+                }
+                .intro__textArea{
+                    .intro__text{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// max-width 768px
+@include responsive("medium"){
+    .intro{
+        display: none;
+    }
+}
+
+// max-width 576px
+@include responsive("small"){
+    .intro{
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,YADQ,CACR,qBAAqB,CAAA;EACjB,QAAQ,EAAE,QAAQ;CAWrB;;AAbL,AAGQ,YAHI,CACR,qBAAqB,CAEjB,GAAG,CAAA;EACC,KAAK,EAAE,IAAI;CACd;;AALT,AAOY,YAPA,CACR,qBAAqB,CAKjB,UAAU,CACN,eAAe,CAAA;EACX,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,IAAI;EACV,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "../Layouts/udeCarousel.scss"
+    ],
+    "names": [],
+    "file": "udeCarousel.css"
+}

@@ -1,0 +1,101 @@
+section {
+    @include styleText($fs-1, $color-black-light, $fw-normal);
+}
+
+.topCategories {
+    margin-bottom: 32px;
+    .topCategories__title{
+        h3 {
+            padding-left: 80px;
+            font-size: $fs-3;
+            margin-bottom: 0;
+            font-weight: $fw-bold-1;
+            line-height: $line-height-0;
+        }
+    }
+    .topCategories__content {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 85%;
+        margin: 0 auto;
+        .topCategories__items {
+            display: flex;
+            margin: 8px 0;
+            padding: 15px;
+            flex-direction: row;
+            border: 0.5px solid #ddd;
+            box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+            &:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            }
+            .items__icon {
+                font-size: $fs-3;
+                padding-right: 16px;
+            }
+            p {
+                font-size: 16px;
+                height: 32px;
+                line-height: 32px;
+                white-space: nowrap;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// responsvie
+// max-width:1200px
+@include responsive ('extra-large'){
+    .topCategories {
+        .topCategories__title{
+            h3 {
+                padding-left: 115px;
+            }
+        }
+        .topCategories__content {
+            width: 80%;
+        }
+    }
+}
+// max-width:992px
+@include responsive ('large'){
+    .topCategories {
+        .topCategories__title{
+            h3 {
+                padding-left: 145px;
+            }
+        }
+        .topCategories__content {
+            width: 70%;
+        }
+    }
+}
+// max-width:768px
+@include responsive ('medium'){
+    .topCategories {
+        .topCategories__title{
+            h3 {
+                padding-left: 10px;
+            }
+        }
+        .topCategories__content {
+            width: 96%;
+            margin: 0 0 0 10px;
+        }
+    }
+}
+// max-width:576px
+@include responsive ('small'){
+    .topCategories {
+        .topCategories__title{
+            h3 {
+                padding-left: 10px;
+            }
+        }
+        .topCategories__content {
+            width: 95%;
+            margin: 0 0 0 10px;
+        }
+    }
+}

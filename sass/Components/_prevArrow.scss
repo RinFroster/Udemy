@@ -1,0 +1,103 @@
+.course__prevArrow, .student__prevArrow, .feedback__prevArrow {
+    @include styleText($fs-1, $color-black-light, $fw-normal);
+}
+
+//course
+.course__prevArrow{
+    position: absolute;
+    left: -10px;
+    top: 27%;
+    font-size: 40px;
+    color: $color-blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background: $color-white-cream;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s;
+    &:hover{
+        box-shadow: 0 2px 8px 2px rgba(0,0,0,0.2);
+    }
+}
+
+.student__prevArrow{
+    position: absolute;
+    left: 60px;
+    top: 27%;
+    font-size: 40px;
+    color: $color-blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background: $color-white-cream;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s;
+    &:hover{
+        box-shadow: 0 2px 8px 2px rgba(0,0,0,0.2);
+    }
+}
+
+//feedback prevArrow
+.feedback__prevArrow{
+    position: absolute;
+    left: -30px;
+    top: 45%;
+    font-size: 24px;
+    color: $color-blue;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    text-align: center;
+    background: $color-white-cream;
+    line-height: 47px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s;
+    &:hover{
+        box-shadow: 0 2px 8px 2px rgba(0,0,0,0.2);
+    }
+}
+
+.slick-arrow.slick-disabled { 
+    display: none !important;
+}
+
+// responsive student prevArrow
+// max-width:1200
+@include responsive ('extra-large'){
+    .student__prevArrow{
+        left: 20px;
+    }
+}
+// max-width:992px
+@include responsive ('large'){
+    .student__prevArrow{
+        left: 40px;
+    }
+}
+// max-width:768px
+@include responsive ('medium'){
+    .student__prevArrow{
+        left: -10px;
+    }
+}
+
+// responsive prevArrow
+// max-width: 1200px
+@include responsive ('extra-large'){
+    .student__prevArrow{
+        left: 0px;
+    }
+}
+// max-width: 992px
+@include responsive ('large'){
+    .student__prevArrow{
+        left: 0px;
+    }
+}
